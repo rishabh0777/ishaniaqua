@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
    
-    <Router basename="/ishaniaqua/">
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<Layout />}>
          <Route index element={<Landing />} />
