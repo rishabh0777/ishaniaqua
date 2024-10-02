@@ -2,7 +2,7 @@ import React from 'react'
 
 const Offer = () => {
   const handleEmailClick = () => {
-    window.location.href = "mailto:rishabhsrivastava7777@gmail.com?subject=Birthday Offer Verification";
+    window.location.href = "mailto:ishaniaquamineralwater@gmail.com?subject=Birthday Offer Verification";
   };
 
   return (

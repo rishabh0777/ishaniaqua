@@ -8,6 +8,7 @@ import Admin from './components/Admin'
 import Order from './components/Order'
 import MyCustomers from './components/MyCustomers'
 import Offer from './components/Offer'
+import Conditions from './components/Conditions'
 
 const App = () => {
   return (
@@ -21,7 +22,7 @@ const App = () => {
          <Route path="my-customer" element={<MyCustomers />} />
          <Route path='order' element={<Order />} />
          <Route path='offers' element={<Offer />} />
-
+         <Route path='t&c' element={<Conditions />} />
         </Route>
         <Route path='signup' element={<Signup />} />
         <Route path='login' element={<Login />} />

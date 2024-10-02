@@ -5,6 +5,7 @@ import Button from './Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../redux/slice/authSlice';
 import { fetchUserData } from '../redux/slice/userSlice';
+import Logo from '../assets/logo/logo.png'
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -108,11 +109,11 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/about-us"
+              to="/t&c"
               onClick={toggleMenu}
               className={({ isActive }) => (isActive ? 'text-blue-500' : 'text-black')}
             >
-              About Us
+              Term's & Conditions
             </NavLink>
           </li>
           <li>
@@ -135,7 +136,10 @@ const Navbar = () => {
 
       {/* Main Navbar */}
       <nav className={`w-full h-[12vh] flex justify-between items-center px-5 py-3 shadow-md shadow-black`}>
-        <h2 className="text-[#2665ed] text-2xl">Ishani</h2>
+        {/*<h2 className="text-[#2665ed] text-2xl">Ishani</h2>*/}
+      <div className="md:w-[5vw] ml-7 xsm:w-[15vw]">
+        <img src={Logo} alt="Ishani" />
+      </div>
         <ul className="w-1/2 md:flex hidden gap-10 justify-center items-center text-[0.9em]">
           <li className="flex flex-col group">
             <NavLink
@@ -186,10 +190,10 @@ const Navbar = () => {
           </li>
           <li className="flex flex-col group">
             <NavLink
-              to="/about-us"
+              to="/t&c"
               className={({ isActive }) => (isActive ? 'text-blue-500' : 'text-black')}
             >
-              About Us
+              Term's & Conditions
             </NavLink>
             <span className="w-[0%] group-hover:w-full mt-[0.1em] border-[0.1em] group-hover:border-[#2665ed] transition-all duration-300 ease-in-out"></span>
           </li>
