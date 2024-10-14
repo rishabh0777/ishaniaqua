@@ -212,7 +212,6 @@ const Navbar = () => {
               text="Signup"
             />
           )}
-          <i className="ri-moon-fill text-black"></i>
         </div>
         <h2 className="md:hidden" onClick={toggleMenu}>
           <i className="ri-menu-4-fill text-blue-500 text-2xl active:text-blue-400"></i>
